@@ -171,13 +171,13 @@ const DevicesSection = () => {
   }, [mq]);
   return (
     <Flex
-      height="80%"
+      height="100%"
       width="full"
       padding="5%"
       flexDir={isPhone ? "column-reverse" : "row"}
     >
       <Flex width={isPhone ? "100%" : "50%"} padding="2%">
-        <Parallax y={[-20, 20]}>
+        <Parallax y={isPhone ? [0, 0] : [-20, 20]}>
           <Image src="https://jointheyounion.com/wp-content/uploads/2021/11/prod-shot-food.png"></Image>
         </Parallax>
       </Flex>
@@ -218,7 +218,7 @@ const DevicesSection = () => {
         </List>
         <MotionGreenButton
           text="Join Now"
-          width="20%"
+          width="fit-content"
           size="lg"
         ></MotionGreenButton>
       </Flex>
