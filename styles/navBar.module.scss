@@ -1,0 +1,22 @@
+.navBarBox {
+  min-width: 100%;
+  // max-height: 20%;
+  padding: 1% 5%;
+  box-shadow: 0px 0px 8px #000;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+}
+
+.headerTitleBox {
+  max-width: 50%;
+}
+
+@media only screen and (max-width: 800px) {
+  .headerContainer {
+    flex-direction: column-reverse;
+  }
+  .headerTitleBox {
+    max-width: 100%;
+  }
+}
